@@ -6,6 +6,9 @@ export const operaciones=(numeros,setNumeros)=>{
             [e.target.name]:parseFloat([e.target.value])});
 
     }
+    
+    const resta=()=> numero1 - numero2;
+    const multi=()=> numero1*numero2;
     const suma=()=> numero1 + numero2;
-    return{handleChange,suma,numero1,numero2}
+    return{handleChange,suma,resta,multi,numero1,numero2}
 }

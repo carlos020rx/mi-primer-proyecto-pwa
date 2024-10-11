@@ -8,7 +8,7 @@ export const NumberInput = () => {
         numero1:0,
         numero2:0
     });
-    const {handleChange,suma,numero1,numero2}= operaciones(numeros,setNumeros);
+    const {handleChange,suma,resta,multi,numero1,numero2}= operaciones(numeros,setNumeros);
 
     return (
         <>
@@ -19,6 +19,9 @@ export const NumberInput = () => {
                 <input name='numero2' value={numero2} onChange={handleChange} type='number' />
             </label>
             <Resultado operaciones={suma} calculo={suma()}/>
+            <Resultado operaciones={resta} calculo={resta()}/>
+            <Resultado operaciones={multi} calculo={multi()}/>
+            <h2></h2>
         </>
     )
 }
